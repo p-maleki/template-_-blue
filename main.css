@@ -1,0 +1,300 @@
+
+.parallax {
+    background-image: url("slider-bg.jpg");
+
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+    background-image: url("images.jpg");
+
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.parallax3
+{
+    
+    
+    background: url("images.jpg") no-repeat scroll center center / cover;
+   
+    position: relative;
+    height: 800px;
+    
+}
+.palax4
+{
+    background: url("slider-bg.jpg") no-repeat scroll center center / cover;
+    position: relative;
+    height: 270px;
+
+}
+.palax4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background:linear-gradient(to bottom, rgb(117, 203, 231) 0%, rgb(19, 143, 194) 100%);
+}
+.parallax3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background:linear-gradient(to bottom, rgb(117, 203, 231) 0%, rgb(19, 143, 194) 100%);
+}
+.pralax6
+{
+    position: relative;
+}
+.t {
+    transition: 0.3s;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+
+}
+
+.t::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(255, 255, 255);
+    position: absolute;
+    right: 50%;
+
+    top: 0px;
+}
+
+li>a {
+    transition: 0.4s;
+    border-top: 3px solid transparent;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.bg-navbar {
+    background-color: #138fc2 !important;
+}
+
+.navbar-nav>li {
+    position: relative;
+    padding-right: 20px !important;
+}
+
+.head-top {
+    
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    background: url("angle-bg.png") no-repeat scroll center bottom -120px / 100% auto;
+    background-color:rgba(19, 143, 194,0.5);
+}
+.head-top2 {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    background: url("angle-bg.png") no-repeat scroll center bottom -120px / 100% auto;
+    height: 1000px;
+    background-color: rgba(19, 143, 194,0.5);
+}
+.button ,.button2:hover
+{
+    background-color: white;
+    color: #138fc2;
+    border-radius: 50px;
+    padding: 8px 30px;
+    border: none;
+}
+.next , .prev
+{
+    cursor: pointer;
+}
+.button:hover ,.button2
+{
+    background-color: #2f60c3;
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 8px 30px;
+    border: none;
+}
+.button2
+{
+    margin-bottom: 2em!important;
+}
+.slid-lg
+{
+    height: 700px;
+}
+.zoom >div:hover
+{
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transform: translateY(-5px);
+}
+.zoom > div{
+    transition: 500ms;
+}
+@media (max-width:768px) {
+    .t {
+        transition: 0s;
+        display: none;
+    }
+    .zoom > div{
+        margin-right: 0px !important;
+    }
+
+    li>a {
+        transition: 0.1s;
+        text-align: center;
+    }
+    .dont-margin-right
+    {
+        margin-right: 0px;
+    }
+}
+@media (max-width:992px)
+{
+    .dont-margin-left
+    {
+        margin-left: 0px!important;
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+    }
+    .slid-lg
+{
+    height: 1100px;
+}
+.contorl
+{
+   
+    top: 900px!important;
+}
+    .dont-display
+    {
+        display: none;
+    }
+}
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 20px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        transform: translate3d(10px, 0, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 700ms;
+    animation-fill-mode: both;
+}
+
+.animated-p {
+    animation-delay: 500ms;
+}
+
+.animated-b {
+    animation-delay: 700ms;
+}
+
+.animated-img1 {
+    animation-delay: 700ms;
+}
+
+.animated-img2 {
+    animation-delay: 1s;
+}
+
+.fadeInLeft {
+    opacity: 0;
+    animation-name: fadeInLeft;
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.item {
+    display: none;
+    position: absolute;
+}
+.contorl
+{
+   
+    position: absolute;
+    top: 500px;
+}
+.item-count
+{
+    margin-top: -2px;
+    cursor: pointer;
+}
+.pric
+{
+    background-color: rgba(19, 143, 194,0.7);
+}
+.contact-up
+{
+    position: absolute; 
+    bottom: 0px; 
+    z-index: 1000; 
+    left: 15%;
+    background-color: white;
+    overflow: hidden;
+    height: 0px;
+    width: 80%;
+    transition: height 0.5s;
+    font-size: 12px;
+}
+.contact-up-content
+{
+    color: #138fc2;
+    width: 25px;
+    height: 25px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.contact-up-content:hover{
+    color: white;
+    background-color: #138fc2;
+}
+.owl-nav
+{
+    text-align: center;
+}
+.plus
+{
+    font-size: 25px;
+    background-color: #2f60c3;
+    width: 30px;
+    height: 30px;
+    color: white;
+}
